@@ -15,7 +15,7 @@ async function seedAdmins() {
     });
 
     const admins = [
-      { username: '23BCI0214', password: 'Roopa214' }
+      { username: process.env.ADMIN_USERNAME, password: process.env.ADMIN_PASSWORD }
     ];
 
     await Admin.insertMany(admins);
